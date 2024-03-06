@@ -216,3 +216,126 @@ print("---------------------------------------------------")
 print("El capital obtenido en la inversión es: ", total)
 
 # 13. Escribir un programa que calcule el promedio de precios de 10 productos.
+# 13. Escribir un programa que calcule el promedio de precios de 10 productos
+print("-----------  Calculo del promedio de precios (10 produ)  ------------------")
+producto1=float(input("Ingrese el precio del 1er producto: "))
+producto2=float(input("Ingrese el precio del 2do producto: "))
+producto3=float(input("Ingrese el precio del 3ero producto: "))
+producto4=float(input("Ingrese el precio del 4to producto: "))
+producto5=float(input("Ingrese el precio del 5to producto: "))
+producto6=float(input("Ingrese el precio del 6to producto: "))
+producto7=float(input("Ingrese el precio del 7mo producto: "))
+producto8=float(input("Ingrese el precio del 8vo producto: "))
+producto9=float(input("Ingrese el precio del 9no producto: "))
+producto10=float(input("Ingrese el precio del 10mo producto: "))
+
+suma=(producto1 + producto2 + producto3 + producto4 + producto5 + producto6 + producto7 + producto8 + producto9 + producto10)
+promedio=suma/10
+
+print("---------------------------------------------------")
+print("El promedio de precios de 10 productos es: ", promedio)
+
+# 14. Concatenar el string ‘Una ambiciosa’, ‘Introducción’, ‘a Python’, ‘Parte 1’.
+print('Una ambiciosa'+' '+'Introducción'+' '+'a Python'+' '+'Parte 1')
+
+
+# 15. Inicializar una variable llamada sociedad con el valor inicial de ‘aiPython P1’
+# a. Imprimir la variable utilizando print()
+texto="EsTo eS uN texTo MeZclAdO"
+print(texto)
+# b. Imprimir la longitud de la variable sociedad usando len() y print()
+print(len(texto))
+# c. Cambiar todos los caracteres a mayúsculas usando el método upper()
+print(texto.upper())
+# d. Cambiar todos los caracteres a minúsculas usando el método lower()
+print(texto.lower())
+
+
+# 16. Usar los métodos capitalize(), title(), swapcase() para formatear el valor del string
+# “sometimes it is the people no one imagines anything of who do the things that no
+# one can imagine.”
+
+texto="sometimes it is the people no one imagines anything of who do the things that no one can imagine"
+
+print("Con capitalize() ")
+print(texto.capitalize())
+print("   -------    ")
+print("Con title() ")
+print(texto.title())
+print("   -------    ")
+print("Con swapcase() ")
+print(texto.swapcase())
+print("   -------    ")
+
+
+# 17. Escribir un programa que pregunte el nombre completo del usuario y después
+# muestre por pantalla el nombre completo del usuario tres veces.
+
+nombreCompleto=input("Ingrese el nombre completo")
+print(nombreCompleto*3)
+
+# 18. Hacer más grande el árbol, conservando proporciones.
+print("              *")
+print("             * *")
+print("            *   *")
+print("           *     *")
+print("          *       *")
+print("         *         *")
+print("        *           *")
+print("       *             *")
+print("      *               *")
+print("     *                 *")
+print("    *                   *")
+print("   *                     *")
+print("  *                       *")
+print(" *                         *")
+print("*                           *")
+print("  *                     *")
+print("  *                     *")
+print("  *                     *")
+print("  *                     *")
+print("  *                     *")
+print("   *********************")
+
+# 19. Utilizar un solo print y /n para dibujar el mismo árbol.
+
+print("\t              *","             * *","            *   *","           *     *","          *       *","         *         *","        *           *","       *             *","      *               *","     *                 *","    *                   *","   *                     *","  *                       *"," *                         *","*                           *","  *                     *","  *                     *","  *                     *","  *                     *","   *********************",sep="\t\n\t")
+
+print("              *","             * *","            *   *","           *     *","          *       *","         *         *","        *           *","       *             *","      *               *","     *                 *","    *                   *","   *                     *","  *                       *"," *                         *","*                           *","  *                     *","  *                     *","  *                     *","  *                     *","   *********************",sep="\n")
+
+
+
+# 20. Dibujar dos árboles uno al lado del otro.
+
+print("    *          *","   * *        * *","  *   *      *   *"," *     *    *     *","*       *  *       *","  *   *      *   *","  *   *      *   *","   ***        ***",sep="\n")
+
+# 21. Escribir un programa que pida una palabra al usuario y reemplace todas las letras
+# "a" por 😃 y muestre el resultado por pantalla.
+
+palabra=input("Ingrese una palabra: ")
+
+print(palabra.replace("a","😃"))
+
+# 22. Cortar las dos primeras palabras de la frase ‘’El razonamiento matemático puede
+# considerarse más bien esquemáticamente como el ejercicio de una combinación de
+# dos instalaciones, que podemos llamar la intuición y el ingenio”.
+
+
+cadena="El razonamiento matemático puede considerarse más bien esquemáticamente como el ejercicio de una combinación de dos instalaciones, que podemos llamar la intuición y el ingenio"
+#print(len(cadena))
+print(cadena[:15],cadena[15:175], sep="\n")
+
+# 23. Remover los espacios en blanco del principio y final de la siguiente frase, “ La
+# ciencia es una ecuación diferencial. La religión es una condición de frontera. “
+
+cadena="    La ciencia es una ecuación diferencial. La religión es una condición de frontera.   "
+print(len(cadena))
+print(cadena[4:85])
+
+
+# 24. Usar el carácter de escape y nueva línea para separar la frase del ejercicio 22 en
+# dos líneas.
+
+cadena="    La ciencia es una ecuación diferencial. La religión es una condición de frontera.   "
+print(len(cadena))
+print(cadena.split())
