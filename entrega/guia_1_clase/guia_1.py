@@ -341,5 +341,5 @@ print(f"{cadena[0:15]}",f"{cadena[16:]}", sep="\n")
 #  25. Usar el carácter de escape y tabulación para mostrar lo siguiente:
 # Nombre Edad Pais Ciudad
 # Alexa 250 USA CapeCod
-print(f"Nombre",f"Edad",f"Pais",f"Ciudad",f"\nAlexa",f"250",f"USA",f"CapeCod",sep="\t")
+print("Nombre","Edad","Pais","Ciudad","\nAlexa","250","USA","CapeCod",sep="\t")
 
