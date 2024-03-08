@@ -328,14 +328,18 @@ print(cadena[:15],cadena[15:175], sep="\n")
 # 23. Remover los espacios en blanco del principio y final de la siguiente frase, “ La
 # ciencia es una ecuación diferencial. La religión es una condición de frontera. “
 
-cadena="    La ciencia es una ecuación diferencial. La religión es una condición de frontera.   "
-print(len(cadena))
-print(cadena[4:85])
-
+frase = " La ciencia es una ecuación diferencial. La religión es una condición de frontera. "
+print(f"Sin cortar{frase}")
+print(f"Con corte{frase.strip()}")
 
 # 24. Usar el carácter de escape y nueva línea para separar la frase del ejercicio 22 en
 # dos líneas.
 
-cadena="    La ciencia es una ecuación diferencial. La religión es una condición de frontera.   "
-print(len(cadena))
-print(cadena.split())
+cadena="El razonamiento matemático puede considerarse más bien esquemáticamente como el ejercicio de una combinación de dos instalaciones, que podemos llamar la intuición y el ingenio"
+print(f"{cadena[0:15]}",f"{cadena[16:]}", sep="\n")
+
+#  25. Usar el carácter de escape y tabulación para mostrar lo siguiente:
+# Nombre Edad Pais Ciudad
+# Alexa 250 USA CapeCod
+print(f"Nombre",f"Edad",f"Pais",f"Ciudad",f"\nAlexa",f"250",f"USA",f"CapeCod",sep="\t")
+
