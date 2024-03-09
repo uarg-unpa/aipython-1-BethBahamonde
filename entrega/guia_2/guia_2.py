@@ -128,4 +128,70 @@ match num :
 print("---------------------")
 
 
+# 7. Genere un programa que clasifique a los estudiantes según sus puntuaciones:
+# ● 80-100, A
+# ● 70-89, B
+# ● 60-69, C
+# ● 50-59, D
+# ● 0-49, F
 
+calificacion=int(input("Ingrese la puntuacion del estudiante: "))
+print("     ----------      ")
+
+
+print("     ----------      ")
+if calificacion >= 80 and calificacion <=100 :
+    print(f" La calificacion: {calificacion} es A.")
+elif calificacion >=70 and calificacion <= 89:
+    print(f" La calificacion: {calificacion} es B.")
+elif calificacion >=60 and calificacion <= 69:
+        print(f" La calificacion: {calificacion} es C.")
+elif calificacion >=50 and calificacion <= 59:
+            print(f" La calificacion: {calificacion} es D.")
+elif calificacion >=0 and calificacion <= 49:
+                 print(f" La calificacion: {calificacion} es F.")
+else:
+    print(f" La calificacion: {calificacion} no es valido")
+    
+print("---------------------")
+
+# 8. Escriba un programa para una empresa que tiene salas de juegos para todas las
+# edades y quiere calcular de forma automática el precio que debe cobrar a sus
+# clientes por entrar. El programa debe preguntar al usuario la edad del cliente y
+# mostrar el precio de la entrada. Si el cliente es menor de 4 años puede entrar gratis,
+# si tiene entre 4 y 18 años debe pagar $5 y si es mayor de 18 años, $10.
+
+edad=int(input("Ingrese la edad del cliente: "))
+print("     ----------      ")
+
+
+print("     ----------      ")
+if edad > 4 and edad <= 0:
+    print(f" Edad del cliente: {edad}.","Entra gratis!!", sep="\n")
+elif edad >= 4 and edad <= 18 :
+    print(f" Edad del cliente: {edad}.","Debe pagar $5 ", sep="\n")
+else :
+    print(f" Edad del cliente: {edad}.","Debe pagar $10 ", sep="\n")
+
+    
+print("---------------------")
+
+
+# 9. Para pagar un determinado impuesto se debe ser mayor de 18 años y tener ingresos
+# iguales o superiores a $100000 mensuales. Escribir un programa que pregunte al
+# usuario su edad y sus ingresos mensuales y muestre por pantalla si el usuario tiene
+# que pagar o no el impuesto
+
+edad=int(input("Ingrese la edad: "))
+print("     ----------      ")
+ingreso=float(input("Ingrese el monto de sus ingresos mensuales: "))
+print("     ----------      ")
+
+print("     ----------      ")
+if edad >= 18 and ingreso >= 100000:
+    print(f" Edad del cliente: {edad}.","Debe pagar el impuesto!!!", sep="\n")
+else :
+    print(f" Edad del cliente: {edad}.","No debe pagar el impuesto!! ", sep="\n")
+
+    
+print("---------------------")
